@@ -55,7 +55,7 @@ export default class DashboardBar extends Component {
   }
   render() {
     return (
-      <div>
+      <div style="background-image: url('../../public/img/planets/mars.jpg')">
         <div class='col-md-6'>
           <Bar
             data={this.state.databar1}

@@ -5,12 +5,14 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { Route, Link, BrowserRouter as Router } from "react-router-dom";
 import DashboardBar from "./components/DashboardBar";
+import Star from "./components/Star";
 
 const routing = (
   <Router>
     <div>
       <Route path='/' component={App} />
       <Route exact path='/dashboard' component={DashboardBar} />
+      <Route exact path='/Star' component={Star} />
       {/* <Route path="/contact" component={Contact} /> */}
     </div>
   </Router>
