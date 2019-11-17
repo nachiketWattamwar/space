@@ -8,7 +8,9 @@ const { mongoose } = require("../backend/db/mongoose");
 const {
   Space,
   Spacebudget,
-  Spacebudgeteurope
+  Spacebudgeteurope,
+  NasaBudget,
+  IsroBudget
 } = require("../backend/models/space");
 
 app.get("/nasaData", (req, res) => {
@@ -87,6 +89,39 @@ app.get("/planetData", (req, res) => {
     const planetData = [names, distances];
 
     res.send(planetData);
+  });
+});
+
+//comparison
+
+app.get("/nasabudget", (req, res) => {
+  res.setHeader("Content-Type", "application/json");
+  console.log("Nasa budgets >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+  NasaBudget.find({}, function(err, nBudget) {
+    let budgets = nBudget.map(n => {
+      console.log("new budget is ", n.budget);
+      return n.budget;
+    });
+
+
+    const naBudget = [budgets];
+
+    res.send(naBudget);
+  });
+});
+
+app.get("/isrobudget", (req, res) => {
+  res.setHeader("Content-Type", "application/json");
+  console.log("isro budgets >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+  IsroBudget.find({}, function(err, iBudget) {
+    let budgets = iBudget.map(n => {
+      console.log("new budget is ", n.budget);
+      return n.budget;
+    });
+
+    const isBudget = [budgets];
+
+    res.send(isBudget);
   });
 });
 
