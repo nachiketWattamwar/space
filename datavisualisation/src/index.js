@@ -6,6 +6,7 @@ import * as serviceWorker from "./serviceWorker";
 import { Route, Link, BrowserRouter as Router } from "react-router-dom";
 import DashboardBar from "./components/DashboardBar";
 import Star from "./components/Star";
+import Agency from "./components/Agency";
 
 const routing = (
   <Router>
@@ -13,6 +14,7 @@ const routing = (
       <Route path='/' component={App} />
       <Route exact path='/dashboard' component={DashboardBar} />
       <Route exact path='/Star' component={Star} />
+      <Route exact path='/agency' component={Agency} />
       {/* <Route path="/contact" component={Contact} /> */}
     </div>
   </Router>

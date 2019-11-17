@@ -275,7 +275,6 @@ export default class Star extends Component {
       {/*End .bod*/}
       </div>
 
-
     );
   }
 }
