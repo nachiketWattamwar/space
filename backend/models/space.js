@@ -44,10 +44,21 @@ const NasaBudgetSchema = new mongoose.Schema({
 
 var NasaBudget = mongoose.model("nbudget", NasaBudgetSchema);
 
+
+const RosBudgetSchema = new mongoose.Schema({
+ 
+  budget: {
+    type: Number
+  }
+});
+
+var RosBudget = mongoose.model("rosbudgets", RosBudgetSchema);
+
 module.exports = {
   Space: Space,
   Spacebudget: Spacebudget,
   Spacebudgeteurope: Spacebudgeteurope,
   NasaBudget: NasaBudget,
-  IsroBudget:IsroBudget
+  IsroBudget:IsroBudget,
+  RosBudget: RosBudget
 };

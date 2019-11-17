@@ -10,7 +10,8 @@ const {
   Spacebudget,
   Spacebudgeteurope,
   NasaBudget,
-  IsroBudget
+  IsroBudget,
+  RosBudget
 } = require("../backend/models/space");
 
 app.get("/nasaData", (req, res) => {
@@ -122,6 +123,21 @@ app.get("/isrobudget", (req, res) => {
     const isBudget = [budgets];
 
     res.send(isBudget);
+  });
+});
+
+app.get("/rosbudget", (req, res) => {
+  res.setHeader("Content-Type", "application/json");
+  console.log("roscosmos budgets >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+  RosBudget.find({}, function(err, rBudget) {
+    let budgets = rBudget.map(n => {
+      console.log("new budget is ", n.budget);
+      return n.budget;
+    });
+
+    const roBudget = [budgets];
+
+    res.send(roBudget);
   });
 });
 

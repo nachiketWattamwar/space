@@ -87,8 +87,29 @@ let budgetCompData = {
       label: "isro",
       fill: false,
       lineTension: 0.1,
-      backgroundColor: "rgba(75,192,192,0.4)",
-      borderColor: "rgba(75,192,192,1)",
+      backgroundColor: "rgba(238,122,39,1)",
+      borderColor: "rgba(238,122,39,1)",
+      borderCapStyle: "butt",
+      borderDash: [],
+      borderDashOffset: 0.0,
+      borderJoinStyle: "miter",
+      pointBorderColor: ["rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,100,11,1)"],
+      pointBackgroundColor: "#fff",
+      pointBorderWidth: [1,1,1,1,1,1,1,5],
+      pointHoverRadius: 5,
+      pointHoverBackgroundColor: "rgba(75,192,192,1)",
+      pointHoverBorderColor: "rgba(220,220,220,1)",
+      pointHoverBorderWidth: [2,2,2,2,2,2,2,5],
+      pointRadius: 1,
+      pointHitRadius: 10,
+      data: []
+    },
+    {
+      label: "roscosmos",
+      fill: false,
+      lineTension: 0.1,
+      backgroundColor: "rgba(11,102,35,1)",
+      borderColor: "rgba(238,122,39,1)",
       borderCapStyle: "butt",
       borderDash: [],
       borderDashOffset: 0.0,
@@ -133,8 +154,18 @@ export default class Star extends Component {
       });
     });
 
-    axios.get(`http://localhost:3001/isrobudget`).then(res => {
+    axios.get(`http://localhost:3001/rosbudget`).then(res => {
       budgetCompData.datasets[1].data = res.data[0];
+      
+      console.log("=================ros budget========", res.data);
+      this.setState({
+        data1: budgetCompData
+      });
+    });
+
+
+    axios.get(`http://localhost:3001/isrobudget`).then(res => {
+      budgetCompData.datasets[2].data = res.data[0];
      
       console.log("=================isro budget========", res.data);
       this.setState({
@@ -187,23 +218,23 @@ export default class Star extends Component {
             />
             </div>
             <div class="col-md-6 ">
-            <Bar
-              data={this.state.databar1}
-              width='700px'
-              height='200px'
-              options={{
-                scales: {
-                  xAxes: [
-                    {
-                      barThickness: 36, // number (pixels) or 'flex'
-                      maxBarThickness: 50 // number (pixels)
-                    }
-                  ]
-                },
-                responsive: true,
-                maintainAspectRatio: true
-              }}
-            />
+            <Line
+            data={this.state.data1}
+            width='700px'
+            height='200px'
+            options={{
+              scales: {
+                xAxes: [
+                  {
+                    barThickness: 36, // number (pixels) or 'flex'
+                    maxBarThickness: 50 // number (pixels)
+                  }
+                ]
+              },
+              responsive: true,
+              maintainAspectRatio: true
+            }}
+          />
             </div>
 
 </div>
