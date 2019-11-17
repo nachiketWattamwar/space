@@ -7,6 +7,7 @@ import { Route, Link, BrowserRouter as Router } from "react-router-dom";
 import DashboardBar from "./components/DashboardBar";
 import Star from "./components/Star";
 import Agency from "./components/Agency";
+import Comparison from "./components/Comparison";
 
 const routing = (
   <Router>
@@ -15,6 +16,7 @@ const routing = (
       <Route exact path='/dashboard' component={DashboardBar} />
       <Route exact path='/Star' component={Star} />
       <Route exact path='/agency' component={Agency} />
+      <Route exact path='/comparison' component={Comparison} />
       {/* <Route path="/contact" component={Contact} /> */}
     </div>
   </Router>
