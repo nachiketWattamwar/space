@@ -360,6 +360,7 @@ app.get("/rosbudget", (req, res) => {
 // });
 
 app.use("/agency", require("./routes/agency"));
+app.use("/planet", require("./routes/planet"));
 
 app.listen(3001, () =>
   console.log("Express server is running on localhost:3001")
