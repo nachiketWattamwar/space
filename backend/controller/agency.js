@@ -289,3 +289,95 @@ module.exports.isro = function(req, res) {
     ]
   });
 };
+
+module.exports.roscosmos = function(req, res) {
+  res.send({
+    name: "ROSCOSMOS",
+    full_name: "Russian Space Agency",
+    logo:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Roscosmos_logo_en.svg/571px-Roscosmos_logo_en.svg.png",
+    est: "1956",
+    country: "RUSSIA",
+    description:
+      "The Roscosmos State Corporation for Space Activities, commonly known as Roscosmos, is a state corporation responsible for the wide range and types of space flights and cosmonautics programs for the Russian Federation.Originally part of the Federal Space Agency, the corporation evolved and consolidated itself to the national state corporation on 28 December 2015 through a presidential decree.Before 1992, Roscosmos was a part of the Russian Aviation and Space Agency.The headquarters of Roscosmos are located in Moscow, while the main Mission Control space center site is in the nearby city of Korolyov as well as the Yuri Gagarin Cosmonaut Training Center located in Star City of Moscow Oblast. The launch facilities used are Baikonur Cosmodrome in Kazakhstan (with most launches taking place there, both manned and unmanned), and Vostochny Cosmodrome being built in the Russian Far East in Amur Oblast.",
+    projects: [
+      {
+        id: "1",
+
+        name: "Vostok 1",
+
+        start_date: "April, 1961",
+
+        end_date: "April, 1961",
+
+        description:
+          "Vostok 1 was the first spaceflight of the Vostok programme and the first crewed spaceflight in history. The Vostok 3KA space capsule was launched from Baikonur Cosmodrome on April 12, 1961, with Soviet cosmonaut Yuri Gagarin aboard, making him the first human to cross into outer space.",
+
+        image_url:
+          "https://airandspace.si.edu/sites/default/files/styles/slideshow_xlg/public/images/collection-objects/record-images/A19700319000d1.jpg?itok=DU4cZMia"
+      },
+
+      {
+        id: "2",
+
+        name: "Vostok 2",
+
+        start_date: "6 August 1961",
+
+        end_date: "7 August 1961",
+
+        description:
+          "Vostok 2 was a Soviet space mission which carried cosmonaut Gherman Titov into orbit for a full day on August 6, 1961 to study the effects of a more prolonged period of weightlessness on the human body.",
+
+        image_url:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Vostok_spacecraft.jpg/390px-Vostok_spacecraft.jpg"
+      },
+
+      {
+        id: "3",
+
+        name: "Soyuz 1",
+
+        start_date: "23 April 1967",
+
+        end_date: "24 April 1967",
+
+        description:
+          "Soyuz 1 was a manned spaceflight of the Soviet space program. Launched into orbit on 23 April 1967 carrying cosmonaut Colonel Vladimir Komarov, Soyuz 1 was the first crewed flight of the Soyuz spacecraft. The flight was plagued with technical issues, and Komarov was killed when the descent module crashed into the ground due to a parachute failure. ",
+
+        image_url:
+          "http://www.papercraftsquare.com/wp-content/uploads/2016/04/Soyuz-1-Spacecraft-Paper-Model.jpg"
+      },
+      {
+        id: "4",
+
+        name: "Soyuz TM-2",
+
+        start_date: "5 February 1987",
+
+        end_date: "30 July 1987",
+
+        description:
+          "Soyuz TM-2 was the spacecraft used to launch a long duration crew to the Soviet space station Mir, which was unmanned at the time. TM-2 was launched in February 1987, and it was first manned spaceflight of the Soyuz-TM spacecraft, and the second manned spaceflight to Mir (the first being Soyuz T-15). ",
+
+        image_url:
+          "https://pbs.twimg.com/media/CoiQ1MAUsAELmjc.jpg?format=jpg&name=small"
+      },
+
+      {
+        id: "5",
+
+        name: "Soyuz T-15",
+
+        start_date: "13 March 1986",
+
+        end_date: "16 July 1986",
+
+        description:
+          "Soyuz T-15 was a manned mission to the Mir and Salyut 7 space stations and was part of the Soyuz programme. It marked the final flight of the Soyuz-T spacecraft, the third generation Soyuz spacecraft, which had been in service for seven years from 1979 to 1986. This mission marked the first time that a spacecraft visited, and docked with, two space stations in the same mission.",
+
+        image_url: "https://i.ytimg.com/vi/ZtrNmvrLO0M/maxresdefault.jpg"
+      }
+    ]
+  });
+};
