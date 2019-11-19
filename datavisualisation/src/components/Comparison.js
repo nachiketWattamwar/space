@@ -193,7 +193,7 @@ export default class Star extends Component {
   }
   render() {
     return (
-      <div class="bod" >
+      <div class="bod-dash" >
       <h1 class="dash-name"> Comparison Dashboard</h1>
       <hr class="my-4"/>
       <div class="dash-background">
@@ -280,52 +280,7 @@ export default class Star extends Component {
 
 </div>
       </div>
-
-       <br/>  
-     < h1 class="dash-name"> Top Agencies</h1>
-     <hr class="my-4"/>
-       <div class="container cardimage">
-
-
-
-
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-{/* <ol class="carousel-indicators">
-<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-</ol> */}
-<div class="carousel-inner carousel">
-<div class="carousel-item active">
-
-<img src={this.nasa} class="logo" />
-</div>
-<div class="carousel-item">
-<img src={this.isro} class="logo" />
-</div>
-<div class="carousel-item">
-<img src={this.csa} class="logo" />
-</div> 
-<div class="carousel-item">
-<img src={this.roscosmos} class="logo" />
-</div> 
-</div>
-
-
-<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-<span class="sr-only">Previous</span>
-</a>
-<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-<span class="carousel-control-next-icon" aria-hidden="true"></span>
-<span class="sr-only">Next</span>
-</a>
-
-
-</div>    
-  </div>
-      
+   
       {/*End .bod*/}
       </div>
 
