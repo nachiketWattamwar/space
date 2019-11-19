@@ -60,67 +60,80 @@ const databar = {
 export default class Star extends Component {
   constructor(props) {
     super(props);
-    this.background = "/img/planets/mars.jpg";
-
+    //this.background = "/img/planets/mars.jpg";
     this.state = {
       dataMissions: myData,
       databar1: databar,
+      planet: ""
     };
   }
 
   componentDidMount() {
-    axios.get(`http://localhost:3001/nasaspacebudget`).then(res => {
-      databar.datasets[0].data = res.data;
-      console.log("=================res line data========", res.data);
-      this.setState({
-        databar1: databar
-      });
-    });
+    const {
+      match: { params }
+    } = this.props;
 
-    console.log("inside cododo ");
-    axios.get(`http://localhost:3001/europespacebudget`).then(res => {
-      databar.datasets[1].data = res.data;
-      console.log("=================res line europe data========", res.data);
-      this.setState({
-        databar1: databar
+    axios
+      .get(`http://localhost:3001/planet/${params.planetName}`)
+      .then(({ data: planetData }) => {
+        console.log("====================spaceData===========", planetData);
+        //console.log("====================spaceData===========", data);
+
+        this.setState({ planet: planetData });
       });
-    });
+
+    // axios.get(`http://localhost:3001/nasaspacebudget`).then(res => {
+    //   databar.datasets[0].data = res.data;
+    //   console.log("=================res line data========", res.data);
+    //   this.setState({
+    //     databar1: databar
+    //   });
+    // });
+
+    // console.log("inside cododo ");
+    // axios.get(`http://localhost:3001/europespacebudget`).then(res => {
+    //   databar.datasets[1].data = res.data;
+    //   console.log("=================res line europe data========", res.data);
+    //   this.setState({
+    //     databar1: databar
+    //   });
+    // });
   }
   render() {
     return (
-      <div class="bod" style={{ backgroundImage: `url(${this.background})`}}>
+      <div class="bod" style={{ backgroundImage: `url(${this.state.planet.imageName})`}}>
         <div class="row border-div">
           <div class="col-md-6 planet-left">
 
             <div class="planet-name-div row">
               <h1 class="planet-name col-md-6">
-                Mars
+              {this.state.planet.name}
               </h1>
             </div>
 
             <div class="row planet-info-main">
 
               <div class="col-sm-3 planet-info-1">
-                Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System after Mercury. In English, Mars carries a name of the Roman god of war and is often referred to as the 'Red Planet
+                {this.state.planet.description}
               </div>
 
               <div class="col-sm-3 planet-info planet-info-2">
                 <div></div>
                 <div class="border-left-div">
-                  <div class="span-div"><span class="number">55.7</span> TO</div>
-                  <div class="span-div"><span class="number">401</span></div>
+                  <div class="span-div"><span class="number">{this.state.planet.minDistance}</span> TO</div>
+                  <div class="span-div"><span class="number">{this.state.planet.maxDistance}</span></div>
                   <div class="span-div"><span class="metric">MILLION KILOMETERS</span></div>
                 </div>
-                <div>Distance from Mars to earth depending on its orbit.</div>
+                <div>Distance from {this.state.planet.name} to earth depending on its orbit.</div>
               </div>
 
               <div class="col-sm-3 planet-info planet-info-3">
                 <div></div>
                 <div class="border-left-div">
-                  <div class="span-div"><span class="number">26</span></div>
+                  <div class="span-div"><span class="number">{this.state.planet.launchWindow}</span></div>
                   <div class="span-div"><span class="metric">MONTHS</span></div>
                 </div>
-                <div> Launch window for Mars from Earth</div>
+                <div> Launch window for {this.state.planet.name} from Earth</div>
               </div>
             </div>
           </div>
@@ -146,10 +159,10 @@ export default class Star extends Component {
                         <div class="inner-grid-border">
                           <div></div>
                           <div>
-                            <div class="span-div"><span class="number">687</span></div>
+                            <div class="span-div"><span class="number">{this.state.planet.daysToRevolve}</span></div>
                             <div class="span-div"><span class="metric">DAYS</span></div>
                           </div>
-                          <div>Number of Earth days it takes Mars to make one revolution around Sun.</div>
+                          <div>Number of Earth days to make one revolution around Sun.</div>
                         </div>
                       </div>
 
@@ -159,8 +172,8 @@ export default class Star extends Component {
                             <span class="space-icon"><IoMdPlanet/></span>
                           </div>
                           <div>
-                            <div class="span-div"><span class="number">1/10</span>TH</div>
-                            <div class="span-div"><span class="metric">MASS OF EARTH</span></div>
+                            <div class="span-div"><span class="number">{this.state.planet.massComparison}</span>TH</div>
+                            <div class="span-div"><span class="metric">MASS </span>OF EARTH</div>
                           </div>
                           <div></div>
                         </div>
@@ -172,11 +185,12 @@ export default class Star extends Component {
                             <span class="space-icon"><MdTimelapse/></span>
                           </div>
                           <div>
-                            <div class="span-div-small"><span class="number-series-1">24 HOURS</span></div>
-                            <div class="span-div-small"><span class="number-series-2">39 MINUITS</span></div>
-                            <div class="span-div-small"><span class="number-series-3">35 SECONDS</span></div>
+                            <div class="span-div-small"><span class="number-series-2">{this.state.planet.lengthHours} HOURS</span></div>
+                            <div class="span-div-small"><span class="number-series-2">{this.state.planet.lengthMinutes} MINUTES</span></div>
+                            <div class="span-div-small"><span class="number-series-3">{this.state.planet.lengthSeconds} SECONDS</span></div>
                           </div>
-                          <div>Length of 1 Martian day known as 'Sol'</div>
+                          
+                          <div class="span-div"><span class="metric">Length </span> of 1 Day </div>
                         </div>
                       </div>
 
@@ -186,10 +200,10 @@ export default class Star extends Component {
                             <span class="space-icon"><IoIosSnow/></span>
                           </div>
                           <div>
-                            <div class="span-div"><span class="number">-55</span></div>
-                            <div class="span-div"><span class="metric">DEGREE CELCIUS</span></div>
+                            <div class="span-div"><span class="number">{this.state.planet.avgTemperature}</span></div>
+                            <div class="span-div"><span class="metric">CELCIUS</span></div>
                           </div>
-                          <div>Is the average temperaturre on MARS</div>
+                          <div>Is the average temperature on {this.state.planet.name}</div>
                         </div>
                       </div>
 
@@ -200,10 +214,10 @@ export default class Star extends Component {
                             <span class="space-icon"><FaWind/></span>
                           </div>
                           <div>
-                            <div class="span-div"><span class="number">144</span></div>
+                            <div class="span-div"><span class="number">{this.state.planet.windSpeed}</span></div>
                             <div class="span-div"><span class="metric">KM/H</span></div>
                           </div>
-                          <div>Highest wind speed recorded on Mars.</div>
+                          <div>Highest wind speed recorded on {this.state.planet.name}.</div>
                         </div>
                       </div>
 
@@ -213,10 +227,10 @@ export default class Star extends Component {
                             <span class="space-icon"><FaMountain/></span>
                           </div>
                           <div>
-                            <div class="span-div"><span class="number">26</span></div>
+                            <div class="span-div"><span class="number">{this.state.planet.heightOfMountain}</span></div>
                             <div class="span-div"><span class="metric">KILOMETERS</span></div>
                           </div>
-                          <div>Height of highest known mountain on Mars.</div>
+                          <div>Height of highest known mountain on {this.state.planet.name}.</div>
                         </div>
                       </div>
 
