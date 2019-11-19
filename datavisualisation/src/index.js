@@ -15,7 +15,7 @@ const routing = (
       <Route path='/' component={App} />
       <Route exact path='/dashboard' component={DashboardBar} />
       <Route exact path='/Star' component={Star} />
-      <Route exact path='/agency' component={Agency} />
+      <Route exact path='/agency/:agencyname' component={Agency} />
       <Route exact path='/comparison' component={Comparison} />
       {/* <Route path="/contact" component={Contact} /> */}
     </div>
