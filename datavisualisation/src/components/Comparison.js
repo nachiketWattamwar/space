@@ -19,8 +19,8 @@ const horizontaldata = {
       backgroundColor: ['rgb(128,0,0,0.9)','rgb(128,0,0,0.8)','rgb(128,0,0,0.7)','rgb(128,0,0,0.6)','rgb(128,0,0,0.5)','rgb(128,0,0,0.4)','rgb(128,0,0,0.3)'],
       borderColor:['rgb(128,0,0,0.9)','rgb(128,0,0,0.8)','rgb(128,0,0,0.7)','rgb(128,0,0,0.6)','rgb(128,0,0,0.5)','rgb(128,0,0,0.4)','rgb(128,0,0,0.3)'],
       borderWidth: 1,
-      hoverBackgroundColor: ['rgb(128,0,0,0.9)','rgb(128,0,0,0.8)','rgb(128,0,0,0.7)','rgb(128,0,0,0.6)','rgb(128,0,0,0.5)','rgb(128,0,0,0.4)','rgb(128,0,0,0.3)'],
-      hoverBorderColor: 'rgb(128,0,0)',
+      hoverBackgroundColor: 'rgb(250,218,94,0.9)',
+      hoverBorderColor: 'rgb(250,218,94)',
       data: [830,280,147,75,54,54,37],
       pointHoverBorderWidth:100
     }
@@ -46,11 +46,11 @@ const doughnutdata = {
    '#61434d',
 		],
 		hoverBackgroundColor: [
-      '#b24e55',
-      '#893e75',
-      '#5e3d70',
-     '#95add5',
-     '#61434d',
+      '#fada5e',
+      '#fada5e',
+      '#fada5e',
+      '#fada5e',
+      '#fada5e',
 		]
 	}]
 };
@@ -64,8 +64,8 @@ const databar = {
       backgroundColor: "rgba(103,156,101)",
       borderColor: "rgba(103,156,101)",
       borderWidth: 1,
-      hoverBackgroundColor: "rgba(103,156,101,0.7)",
-      hoverBorderColor: "rgba(103,156,101,0.7)",
+      hoverBackgroundColor: "rgba(103,156,101,0.6)",
+      hoverBorderColor: "rgba(103,156,101,0.6)",
       data: [100,50,70,55,85]
     },
     {
@@ -73,8 +73,8 @@ const databar = {
       backgroundColor: "rgba(238,122,39,0.9)",
       borderColor: "rgba(238,122,39,0.9)",
       borderWidth: 1,
-      hoverBackgroundColor: "rgba(238,122,39,0.7)",
-      hoverBorderColor: "rgba(238,122,39,0.7)",
+      hoverBackgroundColor: "rgba(238,122,39,0.6)",
+      hoverBorderColor: "rgba(238,122,39,0.6)",
       data: [40,27,40,35,39]
     }
   ]
@@ -90,13 +90,13 @@ let spacewalkData = {
       lineTension: 0.1,
       backgroundColor: "rgba(99,43,124,0.6)",
       borderColor: "rgba(99,43,124,0.6)",
-      borderCapStyle: "butt",
-      borderDash: [],
-      borderDashOffset: 0.0,
-      borderJoinStyle: "miter",
-      pointBorderColor: ["rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,100,11,1)"],
-      pointBackgroundColor: "#fff",
-      pointBorderWidth: [1,1,1,1,1,1,1,5],
+      // borderCapStyle: "butt",
+      // borderDash: [],
+      // borderDashOffset: 0.0,
+      // borderJoinStyle: "miter",
+      // pointBorderColor: ["rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,100,11,1)"],
+      // pointBackgroundColor: "#fff",
+      // pointBorderWidth: [1,1,1,1,1,1,1,5],
       pointHoverRadius: 5,
       pointHoverBackgroundColor: "rgba(99,43,124)",
       pointHoverBorderColor: "rgba(99,43,124)",
@@ -113,13 +113,13 @@ let spacewalkData = {
       lineTension: 0.1,
       backgroundColor: "rgba(58,115,19,0.6)",
       borderColor: "rgba(58,115,19,0.6)",
-      borderCapStyle: "butt",
-      borderDash: [],
-      borderDashOffset: 0.0,
-      borderJoinStyle: "miter",
-      pointBorderColor: ["rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,100,11,1)"],
-      pointBackgroundColor: "#fff",
-      pointBorderWidth: [1,1,1,1,1,1,1,5],
+      // borderCapStyle: "butt",
+      // borderDash: [],
+      // borderDashOffset: 0.0,
+      // borderJoinStyle: "miter",
+      // pointBorderColor: ["rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,100,11,1)"],
+      // pointBackgroundColor: "#fff",
+      // pointBorderWidth: [1,1,1,1,1,1,1,5],
       pointHoverRadius: 5,
       pointHoverBackgroundColor: "rgba(58,115,19,0.8)",
       pointHoverBorderColor: "rgba(58,115,19,0.8)",
@@ -346,7 +346,7 @@ export default class Star extends Component {
               
             }}
           />
-            <div class="dash-text">Total spacewalks from 1998 to 2019 by NASA and ROSCOSMOS</div></div>
+            <div class="dash-text">Total spacewalks from 1998 to 2019 by NASA and ROS</div></div>
            
             </div></div>
             <div class="col-md-4 tilepad">
