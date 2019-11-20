@@ -16,12 +16,13 @@ const horizontaldata = {
   datasets: [
     {
       label: "Number of Satellites",
-      backgroundColor: ['rgb(128,0,0,0.9)','rgb(178, 34,34,0.9)','rgb(165, 42,42,0.9)','rgb(178, 34, 34,0.8)','rgb(220, 20, 60,0.9)','rgb(255, 99, 71)','rgb(240, 128, 128)'],
-      borderColor: 'rgba(0,0,255,0.6)',
+      backgroundColor: ['rgb(128,0,0,0.9)','rgb(128,0,0,0.8)','rgb(128,0,0,0.7)','rgb(128,0,0,0.6)','rgb(128,0,0,0.5)','rgb(128,0,0,0.4)','rgb(128,0,0,0.3)'],
+      borderColor:['rgb(128,0,0,0.9)','rgb(128,0,0,0.8)','rgb(128,0,0,0.7)','rgb(128,0,0,0.6)','rgb(128,0,0,0.5)','rgb(128,0,0,0.4)','rgb(128,0,0,0.3)'],
       borderWidth: 1,
-      hoverBackgroundColor: 'rgba(0,0,255,0.3)',
-      hoverBorderColor: 'rgba(0,0,255,0.3)',
-      data: [830,280,147,75,54,54,37]
+      hoverBackgroundColor: ['rgb(128,0,0,0.9)','rgb(128,0,0,0.8)','rgb(128,0,0,0.7)','rgb(128,0,0,0.6)','rgb(128,0,0,0.5)','rgb(128,0,0,0.4)','rgb(128,0,0,0.3)'],
+      hoverBorderColor: 'rgb(128,0,0)',
+      data: [830,280,147,75,54,54,37],
+      pointHoverBorderWidth:100
     }
   ]
 };
@@ -35,45 +36,46 @@ const doughnutdata = {
     'Government'
 	],
 	datasets: [{
-		data: [846,145,279,302,385],
+    // data: [846,145,279,302,385],
+    data: [40,10,16,15,19],
 		backgroundColor: [
-		'#FF6384',
-		'#36A2EB',
-    '#FFCE56',
-    '#66CC00',
-    '#7F00FF',
+		'#b24e55',
+		'#893e75',
+    '#5e3d70',
+   '#95add5',
+   '#61434d',
 		],
 		hoverBackgroundColor: [
-		'#FF6384',
-		'#36A2EB',
-    '#FFCE56',
-    '#66CC00',
-    '#7F00FF'
+      '#b24e55',
+      '#893e75',
+      '#5e3d70',
+     '#95add5',
+     '#61434d',
 		]
 	}]
 };
 
 
 const databar = {
-  labels: ["NASA", "ISRO", "ROSCOSMOS", "ESA"],
+  labels: ["NASA", "ISRO", "ROSCOSMOS", "ESA","CNSA"],
   datasets: [
     {
       label: "Success",
-      backgroundColor: "rgba(107,180,212,1)",
-      borderColor: "rgba(107,180,212,1)",
+      backgroundColor: "rgba(103,156,101)",
+      borderColor: "rgba(103,156,101)",
       borderWidth: 1,
-      hoverBackgroundColor: "rgba(255,99,132,0.4)",
-      hoverBorderColor: "rgba(255,99,132,1)",
-      data: [9,8,7,6,5,4]
+      hoverBackgroundColor: "rgba(103,156,101,0.7)",
+      hoverBorderColor: "rgba(103,156,101,0.7)",
+      data: [100,50,70,55,85]
     },
     {
       label: "Failure",
-      backgroundColor: "rgba(238,122,39,1)",
-      borderColor: "rgba(238,122,39,1)",
+      backgroundColor: "rgba(238,122,39,0.9)",
+      borderColor: "rgba(238,122,39,0.9)",
       borderWidth: 1,
-      hoverBackgroundColor: "rgba(55,259,132,0.4)",
-      hoverBorderColor: "rgba(55,12,132,1)",
-      data: [9,8,7,6,5,4]
+      hoverBackgroundColor: "rgba(238,122,39,0.7)",
+      hoverBorderColor: "rgba(238,122,39,0.7)",
+      data: [40,27,40,35,39]
     }
   ]
 };
@@ -86,8 +88,8 @@ let spacewalkData = {
       label: "NASA",
       fill: false,
       lineTension: 0.1,
-      backgroundColor: "rgba(75,62,192,0.4)",
-      borderColor: "rgba(75,192,192,1)",
+      backgroundColor: "rgba(99,43,124,0.6)",
+      borderColor: "rgba(99,43,124,0.6)",
       borderCapStyle: "butt",
       borderDash: [],
       borderDashOffset: 0.0,
@@ -96,8 +98,8 @@ let spacewalkData = {
       pointBackgroundColor: "#fff",
       pointBorderWidth: [1,1,1,1,1,1,1,5],
       pointHoverRadius: 5,
-      pointHoverBackgroundColor: "rgba(75,192,192,1)",
-      pointHoverBorderColor: "rgba(220,220,220,1)",
+      pointHoverBackgroundColor: "rgba(99,43,124)",
+      pointHoverBorderColor: "rgba(99,43,124)",
       pointHoverBorderWidth: [2,2,2,2,2,2,2,5],
       pointRadius: 1,
       pointHitRadius: 10,
@@ -125,7 +127,7 @@ let spacewalkData = {
       pointRadius: 1,
       pointHitRadius: 10,
       // data: [0,0,0,5,4,0,5,3,3,3,3,3,3,3,2,6,4,1,1,1,3,0]
-      data: [0,0,0,5,9,0,14,17,20,23,26,29,32,35,37,43,47,48,49,50,53,53]
+      data: [0,0,0,5,9,9,14,17,20,23,26,29,32,35,37,43,47,48,49,50,53,53]
     }
   ]
 };
@@ -136,8 +138,8 @@ let budgetCompData = {
       label: "NASA",
       fill: false,
       lineTension: 0.1,
-      backgroundColor: "rgba(75,62,192,0.4)",
-      borderColor: "rgba(75,192,192,1)",
+      backgroundColor: "rgba(13,25,114,0.7)",
+      borderColor: "rgba(13,25,114,0.7)",
       borderCapStyle: "butt",
       borderDash: [],
       borderDashOffset: 0.0,
@@ -146,8 +148,8 @@ let budgetCompData = {
       pointBackgroundColor: "#fff",
       pointBorderWidth: [1,1,1,1,1,1,1,5],
       pointHoverRadius: 5,
-      pointHoverBackgroundColor: "rgba(75,192,192,1)",
-      pointHoverBorderColor: "rgba(220,220,220,1)",
+      pointHoverBackgroundColor: "rgba(13,25,114)",
+      pointHoverBorderColor: "rgba(13,25,114)",
       pointHoverBorderWidth: [2,2,2,2,2,2,2,5],
       pointRadius: 1,
       pointHitRadius: 10,
@@ -157,8 +159,8 @@ let budgetCompData = {
       label: "ISRO",
       fill: false,
       lineTension: 0.1,
-      backgroundColor: "rgba(255,0,0,0.7)",
-      borderColor: "rgba(255,0,0,0.7)",
+      backgroundColor: "rgba(93,146,107,0.7)",
+      borderColor: "rgba(93,146,107,0.7)",
       borderCapStyle: "butt",
       borderDash: [],
       borderDashOffset: 0.0,
@@ -167,8 +169,8 @@ let budgetCompData = {
       pointBackgroundColor: "#fff",
       pointBorderWidth: [1,1,1,1,1,1,1,5],
       pointHoverRadius: 5,
-      pointHoverBackgroundColor: "rgba(255,0,0,0.5)",
-      pointHoverBorderColor: "rgba(255,0,0,0.5)",
+      pointHoverBackgroundColor: "rgba(93,146,107)",
+      pointHoverBorderColor: "rgba(93,146,107)",
       pointHoverBorderWidth: [2,2,2,2,2,2,2,5],
       pointRadius: 1,
       pointHitRadius: 10,
@@ -178,8 +180,8 @@ let budgetCompData = {
       label: "ROSCOSMOS",
       fill: false,
       lineTension: 0.1,
-      backgroundColor: "rgba(58,115,19,0.6)",
-      borderColor: "rgba(58,115,19,0.6)",
+      backgroundColor: "rgba(129,129,129,0.7)",
+      borderColor: "rgba(129,129,129,0.7)",
       borderCapStyle: "butt",
       borderDash: [],
       borderDashOffset: 0.0,
@@ -188,8 +190,8 @@ let budgetCompData = {
       pointBackgroundColor: "#fff",
       pointBorderWidth: [1,1,1,1,1,1,1,5],
       pointHoverRadius: 5,
-      pointHoverBackgroundColor: "rgba(58,115,19,0.8)",
-      pointHoverBorderColor: "rgba(58,115,19,0.8)",
+      pointHoverBackgroundColor: "rgba(129,129,129)",
+      pointHoverBorderColor: "rgba(129,129,129)",
       pointHoverBorderWidth: [2,2,2,2,2,2,2,5],
       pointRadius: 1,
       pointHitRadius: 10,
@@ -199,8 +201,8 @@ let budgetCompData = {
       label: "ESA",
       fill: false,
       lineTension: 0.1,
-      backgroundColor: "rgba(255,0,255,0.7)",
-      borderColor: "rgba(255,0,255,0.7)",
+      backgroundColor: "rgba(144,104,98,0.7)",
+      borderColor: "rgba(144,104,98,0.7)",
       borderCapStyle: "butt",
       borderDash: [],
       borderDashOffset: 0.0,
@@ -209,8 +211,8 @@ let budgetCompData = {
       pointBackgroundColor: "#fff",
       pointBorderWidth: [1,1,1,1,1,1,1,5],
       pointHoverRadius: 5,
-      pointHoverBackgroundColor: "rgba(255,0,255,0.5)",
-      pointHoverBorderColor: "rgba(255,0,255,0.5)",
+      pointHoverBackgroundColor: "rgba(144,104,98)",
+      pointHoverBorderColor: "rgba(144,104,98)",
       pointHoverBorderWidth: [2,2,2,2,2,2,2,5],
       pointRadius: 1,
       pointHitRadius: 10,
@@ -220,8 +222,8 @@ let budgetCompData = {
       label: "CNSA",
       fill: false,
       lineTension: 0.5,
-      backgroundColor: "rgb(169,169,169)",
-      borderColor: "rgb(169,169,169)",
+      backgroundColor: "rgb(210,136,136,0.7)",
+      borderColor: "rgb(210,136,136,0.7)",
       borderCapStyle: "butt",
       borderDash: [],
       borderDashOffset: 0.0,
@@ -230,8 +232,8 @@ let budgetCompData = {
       pointBackgroundColor: "#fff",
       pointBorderWidth: [1,1,1,1,1,1,1,5],
       pointHoverRadius: 5,
-      pointHoverBackgroundColor: "rgb(128,128,128)",
-      pointHoverBorderColor: "rgb(128,128,128)",
+      pointHoverBackgroundColor: "rgb(210,136,136)",
+      pointHoverBorderColor: "rgb(210,136,136)",
       pointHoverBorderWidth: [2,2,2,2,2,2,2,5],
       pointRadius: 1,
       pointHitRadius: 10,
@@ -287,23 +289,23 @@ export default class Star extends Component {
       
       });
     });
-    axios.get(`http://localhost:3001/nasaspacebudget`).then(res => {
+    // axios.get(`http://localhost:3001/nasaspacebudget`).then(res => {
     
-      databar.datasets[0].data = res.data;
-      console.log("=================res line data========", res.data);
-      this.setState({
-        databar1: databar
-      });
-    });
+    //   databar.datasets[0].data = res.data;
+    //   console.log("=================res line data========", res.data);
+    //   this.setState({
+    //     databar1: databar
+    //   });
+    // });
 
-    console.log("inside cododo ");
-    axios.get(`http://localhost:3001/europespacebudget`).then(res => {
-      databar.datasets[1].data = res.data;
-      console.log("=================res line europe data========", res.data);
-      this.setState({
-        databar1: databar
-      });
-    });
+    // console.log("inside cododo ");
+    // axios.get(`http://localhost:3001/europespacebudget`).then(res => {
+    //   databar.datasets[1].data = res.data;
+    //   console.log("=================res line europe data========", res.data);
+    //   this.setState({
+    //     databar1: databar
+    //   });
+    // });
   }
   render() {
     return (
@@ -344,7 +346,7 @@ export default class Star extends Component {
               
             }}
           />
-            <div class="dash-text">Total spacewalks from 1998 to 2019</div></div>
+            <div class="dash-text">Total spacewalks from 1998 to 2019 by NASA and ROSCOSMOS</div></div>
            
             </div></div>
             <div class="col-md-4 tilepad">
@@ -358,15 +360,27 @@ export default class Star extends Component {
                   xAxes: [
                     {
                       barThickness: 20, // number (pixels) or 'flex'
-                      maxBarThickness: 30 // number (pixels)
+                      maxBarThickness: 20, // number (pixels)
+                      gridLines: {
+                        display:false,
+                       
                     }
-                  ]
-                },
+                       }]
+                    }
+                  ,
+                  yAxes: [{
+                    gridLines: {
+                        display:false,
+                     
+                    } 
+                  }]  
+                ,
                 responsive: true,
                 maintainAspectRatio: true
+                
               }}
             />
-            <div class="dash-text">Success and Failure of satellite launches</div>
+            <div class="dash-text">Number of successful and failed satellite launches</div>
           </div>
           
            </div></div>
@@ -402,7 +416,7 @@ export default class Star extends Component {
               
             }}
           />
-           <div class="dash-text">Last 4 year budgets of space agencies</div></div>
+           <div class="dash-text">Budgets of Space Agencies for past 4 Years</div></div>
            
             </div></div>
             
@@ -454,7 +468,7 @@ export default class Star extends Component {
         options={{
           responsive: true,
           maintainAspectRatio: true,
-          cutoutPercentage: 70,
+          cutoutPercentage: 60,
           
         }}
 
@@ -462,7 +476,7 @@ export default class Star extends Component {
       />
 
 
-    <div class="dash-text">How the active 1957 satellites are being used </div>
+    <div class="dash-text">Use of active satellites in percentage</div>
           </div>
            </div></div>
             </div>
