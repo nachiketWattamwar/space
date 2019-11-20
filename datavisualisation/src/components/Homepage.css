@@ -11,12 +11,24 @@
   background-blend-mode: multiply;
 }
 
+.fancy-border {
+  border: 5px solid white;
+  border-image: linear-gradient(to left, #743ad5 0%, #d53a9d 100%);
+  border-image: linear-gradient(to left, #8e66e1 0%, #b965d5 100%);
+  border-image-slice: 1;
+  border-width: 12px;
+  width: 15%;
+  padding: 2em;
+  margin-left: 14em;
+  margin-top: 5em;
+}
+
 .name-div {
   padding-top: 10%;
 }
 .name {
   color: white;
-  font-size: 60px;
+  font-size: 90px;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -38,8 +50,10 @@
 }
 
 .plantes-div {
-  padding-top: 4em;
-  padding-bottom: 4em;
+  padding-top: 8em;
+  padding-bottom: 14em;
+  background-color: #3a315e;
+  color: white;
 }
 .section-title {
   margin-bottom: 1em;
@@ -70,28 +84,51 @@
 .agency-div {
   padding-top: 4em;
   padding-bottom: 4em;
+  color: white;
 }
 
 .agency-div {
-  padding-top: 4em;
-  padding-bottom: 4em;
+  padding-top: 10em;
+  padding-bottom: 14em;
+  background-image: url("/img/backgrounds/space-purple.jpg");
+  background-size: cover;
 }
 
 .comparison-left {
   padding-left: 10em;
 }
 
+.comparison-div {
+  overflow-x: hidden;
+  padding-top: 10em;
+  padding-bottom: 4em;
+  background-color: #3a315e;
+  color: white;
+}
+
 .mybtn {
+  text-decoration: none;
   padding: 1em;
   border: 1px solid #3a315e;
-  background-color: #3a315e;
+  background-color: white;
   color: #c37ce2;
   border-radius: 5px;
   margin-top: 15em;
+}
+
+.mybtn:hover {
+  color: #3a315e;
+  text-decoration: none;
 }
 
 .description {
   font-weight: normal;
   font-family: 'Raleway', sans-serif;
   margin-bottom: 2em;
+  width: 70%;
+}
+
+.image-right {
+  float: right;
+  margin-right: 20em;
 }

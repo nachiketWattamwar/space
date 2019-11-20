@@ -11,15 +11,15 @@ export default class Homepage extends Component {
       <div class="homepage-wrapper">
         <div class="banner-wrapper">
           <div class="banner background-tint">
-            <div class="container center name-div">
-              <div class="logo center">
-                <img src="/img/spaceship-logo.png"/>
+            <div class="name-div">
+              <div class="fancy-border">
+                <h1 class="name">Lift Off</h1>
               </div>
-              <h1 class="name">Lift Off</h1>
-              <p>Some Tag Line</p>
             </div>
           </div>
         </div> {/*End .banner-wrapper*/}
+
+
         <div class="plantes-div">
           <div class="container">
 
@@ -105,23 +105,24 @@ export default class Homepage extends Component {
         </div> {/*end .agency-div*/}
 
         <div class="comparison-div">
-          <div class="row">
+          <div>
+            <div class="row">
 
-            <div class="col-md-6 comparison-left">
-              <h2 class="section-title">Comparison</h2>
-              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div class="col-md-6 comparison-left">
+                <h2 class="section-title">Comparison</h2>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-              <a class="mybtn" href="http://localhost:3000/comparison">EXPLORE</a>
+                <a class="mybtn" href="http://localhost:3000/comparison">EXPLORE</a>
 
+              </div>
+
+              <div class="col-md-6 comparison-right">
+                <img class="image-right" src="/img/astronaut.png"/>
+              </div>
             </div>
-
-            <div class="col-md-6 comparison-left">
-              <img src="/img/astronaut.png"/>
-            </div>
-          </div>
         </div>
 
-
+        </div>
       </div>
     );
   }
