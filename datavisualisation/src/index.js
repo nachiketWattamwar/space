@@ -8,11 +8,13 @@ import DashboardBar from "./components/DashboardBar";
 import Star from "./components/Star";
 import Agency from "./components/Agency";
 import Comparison from "./components/Comparison";
+import Homepage from "./components/Homepage";
 
 const routing = (
   <Router>
     <div>
       <Route path='/' component={App} />
+      <Route path='/home' component={Homepage} />
       <Route exact path='/dashboard' component={DashboardBar} />
       <Route exact path='/planet/:planetName' component={Star} />
       <Route exact path='/agency/:agencyname' component={Agency} />
