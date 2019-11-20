@@ -8,7 +8,7 @@ import { IoIosSnow, IoMdPlanet } from 'react-icons/io';
 import { MdTimelapse } from 'react-icons/md';
 
 
-const myData = {
+const marsData = {
   labels: ["United States", "USSR/RUSSIA", "INDIA", "JAPAN", "ESA", "OTHERS"],
   datasets: [
     {
@@ -32,8 +32,7 @@ const myData = {
   ]
 };
 
-
-const databar = {
+const moonData = {
   labels: ["United States", "USSR/RUSSIA", "INDIA", "JAPAN", "ESA", "OTHERS"],
   datasets: [
     {
@@ -43,7 +42,7 @@ const databar = {
       borderWidth: 1,
       hoverBackgroundColor: "rgba(255,99,132,0.4)",
       hoverBorderColor: "rgba(255,99,132,1)",
-      data: [9,8,7,6,5,4]
+      data: [60,56,2,7,1,10]
     },
     {
       label: "Failure",
@@ -52,7 +51,55 @@ const databar = {
       borderWidth: 1,
       hoverBackgroundColor: "rgba(55,259,132,0.4)",
       hoverBorderColor: "rgba(55,12,132,1)",
-      data: [9,8,7,6,5,4]
+      data: [38,18,2,5,1,3]
+    }
+  ]
+};
+
+const jupiterData = {
+  labels: ["United States", "USSR/RUSSIA", "INDIA", "JAPAN", "ESA", "OTHERS"],
+  datasets: [
+    {
+      label: "Success",
+      backgroundColor: "rgba(107,180,212,1)",
+      borderColor: "rgba(107,180,212,1)",
+      borderWidth: 1,
+      hoverBackgroundColor: "rgba(255,99,132,0.4)",
+      hoverBorderColor: "rgba(255,99,132,1)",
+      data: [6,0,0,2,1,1]
+    },
+    {
+      label: "Failure",
+      backgroundColor: "rgba(238,122,39,1)",
+      borderColor: "rgba(238,122,39,1)",
+      borderWidth: 1,
+      hoverBackgroundColor: "rgba(55,259,132,0.4)",
+      hoverBorderColor: "rgba(55,12,132,1)",
+      data: [0,0,0,0,0,0]
+    }
+  ]
+};
+
+const saturnData = {
+  labels: ["United States", "USSR/RUSSIA", "INDIA", "JAPAN", "ESA", "OTHERS"],
+  datasets: [
+    {
+      label: "Success",
+      backgroundColor: "rgba(107,180,212,1)",
+      borderColor: "rgba(107,180,212,1)",
+      borderWidth: 1,
+      hoverBackgroundColor: "rgba(255,99,132,0.4)",
+      hoverBorderColor: "rgba(255,99,132,1)",
+      data: [4,0,0,0,1,0]
+    },
+    {
+      label: "Failure",
+      backgroundColor: "rgba(238,122,39,1)",
+      borderColor: "rgba(238,122,39,1)",
+      borderWidth: 1,
+      hoverBackgroundColor: "rgba(55,259,132,0.4)",
+      hoverBorderColor: "rgba(55,12,132,1)",
+      data: [0,0,0,0,0,0]
     }
   ]
 };
@@ -62,10 +109,24 @@ export default class Star extends Component {
     super(props);
     //this.background = "/img/planets/mars.jpg";
     this.state = {
-      dataMissions: myData,
-      databar1: databar,
+      dataMissions: "",
       planet: ""
     };
+  }
+
+  renderSwitch(param) {
+    switch(param) {
+      case 'mars':
+        return marsData;
+      case 'moon':
+        return moonData;
+      case 'jupiter':
+        return jupiterData;
+      case 'saturn':
+        return saturnData;
+      default:
+        return [];
+    }
   }
 
   componentDidMount() {
@@ -100,6 +161,8 @@ export default class Star extends Component {
     // });
   }
   render() {
+    const name = this.props.match.params.planetName;
+    console.log(name);
     return (
       <div class="bod" style={{ backgroundImage: `url(${this.state.planet.imageName})`}}>
         <div class="row border-div">
@@ -133,7 +196,7 @@ export default class Star extends Component {
                   <div class="span-div"><span class="number">{this.state.planet.launchWindow}</span></div>
                   <div class="span-div"><span class="metric">MONTHS</span></div>
                 </div>
-                <div> Launch window for {this.state.planet.name} from Earth</div>
+                <div> Time taken to reach {this.state.planet.name} from Earth</div>
               </div>
             </div>
           </div>
@@ -248,7 +311,7 @@ export default class Star extends Component {
                 <div class="carousel-item">
                   <div class="info-grid-wrapper">
                   <Bar
-                    data={this.state.dataMissions}
+                    data={this.renderSwitch(name)}
                     width='700px'
                     height='500px'
                     options={{
