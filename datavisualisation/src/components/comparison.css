@@ -11,9 +11,8 @@
     font-size: 40px;
     text-transform: uppercase;
     font-family: 'Alatsi', 'Anton';
-    color: rgb(7, 7, 7);
+    color: rgba(53, 49, 49, 0.877);
   }
-  
   
   
   .logo {
@@ -39,15 +38,13 @@
     border: #ffffff;
   
   }
-  
-  
+   
   .dash-background{
-      width: 80%;
-      height: fit-content;
-      margin-left: 0vw;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      border-radius: 5px;
-      padding: 2vw;
+      
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.247), 0 6px 20px 0 rgba(0, 0, 0, 0.205);
+      border-radius: 1px;
+      padding: 1vw;
+      
     }
 
     .cardimage{
@@ -55,4 +52,20 @@
       margin-right: 600px;
     }
   
-   
+   .pad{
+     padding-right: 1px;
+     padding-bottom: 3px;    
+   }
+
+   .tilepad{
+     padding: 3px
+
+   }
+
+   .dash-text{
+    font-size: 19px;
+    
+    font-family: 'Alatsi', 'Anton';
+    color: rgba(53, 49, 49, 0.877);
+    text-align: center;
+   }
