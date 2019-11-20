@@ -311,7 +311,7 @@ export default class Star extends Component {
     return (
       
       <div class="bod-dash" >
-      <h1 class="dash-name "> Comparison Dashboard</h1>
+      <h1 class="dash-name ">Comparative Analysis of Space Agencies</h1>
       <hr class="my-4"/>
       <div>
       < div class="row">
