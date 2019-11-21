@@ -1,13 +1,10 @@
 import React from "react";
-import "./App.css";
-import DashboardBar from "./components/DashboardBar";
+
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className='App'>
-      <div><h1>Nav Bar Placeholder</h1></div>
-    </div>
-
+    <Navbar/>
   );
 
 }
