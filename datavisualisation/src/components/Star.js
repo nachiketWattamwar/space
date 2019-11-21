@@ -335,8 +335,9 @@ export default class Star extends Component {
                       maintainAspectRatio: true
                     }}
                   />
+                  <div class="text-body">Country-wise Successful & Failed Missions to this planet</div>
                   </div>
-
+                  
                 </div>
 
               {/*End .carousel-inner*/}

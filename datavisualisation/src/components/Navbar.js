@@ -15,7 +15,7 @@ export default class Navbar extends Component {
           <div class="row nav-row">
 
             <div class="col-md-4">
-              <a class="navbar-brand" href="http://localhost:3000/home">
+              <a class="navbar-brand" href="http://localhost:3000/">
                 <GiRocketFlight/>
 
                 Lift-Off

@@ -61,10 +61,10 @@ const databar = {
   datasets: [
     {
       label: "Success",
-      backgroundColor: "rgba(70,130,180,0.8)",
+      backgroundColor: ["rgba(35,106,161,1)","rgba(70,130,180,0.8)","rgba(70,130,180,0.8)","rgba(70,130,180,0.8)","rgba(70,130,180,0.8)"],
       borderColor: "rgba(70,130,180,0.8)",
       borderWidth: 1,
-      hoverBackgroundColor: "rgba(70,130,180)",
+      hoverBackgroundColor: ["rgba(35,106,161,1)","rgba(70,130,180)","rgba(70,130,180)","rgba(70,130,180)","rgba(70,130,180)"],
       hoverBorderColor: "rgba(70,130,180)",
       data: [100,50,70,55,85]
     },
@@ -144,7 +144,7 @@ let budgetCompData = {
       borderDash: [],
       borderDashOffset: 0.0,
       borderJoinStyle: "miter",
-      pointBorderColor: ["rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,100,11,1)"],
+      pointBorderColor: ["rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(9,31,105,1)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(9,31,105,1)"],
       pointBackgroundColor: "#fff",
       pointBorderWidth: [1,1,1,5],
       pointHoverRadius: 5,
@@ -380,7 +380,7 @@ export default class Star extends Component {
                 
               }}
             />
-            <div class="dash-text">Successful and Failed Launches</div>
+            <div class="dash-text">Total Successful & Failed Launches</div>
           </div>
           
            </div></div>

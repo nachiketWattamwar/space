@@ -117,7 +117,7 @@ export default class Homepage extends Component {
                  a comparative analysis of the past and recent activities of the space agencies here.
 </p>
 
-                <a class="mybtn" href="http://localhost:3000/comparison">EXPLORE</a>
+                <a class="mybtn" href="http://localhost:3000/comparison">EXPLORE THE DASHBOARD</a>
 
               </div>
 
