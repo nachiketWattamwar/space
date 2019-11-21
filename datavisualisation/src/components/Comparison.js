@@ -12,7 +12,7 @@ import { IoIosSnow, IoMdPlanet } from 'react-icons/io';
 import { MdTimelapse } from 'react-icons/md';
 
 const horizontaldata = {
-  labels: ['NASA', 'CNSA', 'ROSCOSMOS', 'JAXA','UKSA', 'ISRO','CASA'],
+  labels: ['NASA', 'CNSA', 'ROSCOSMOS', 'JAXA','UKSA', 'ISRO','CSA'],
   datasets: [
     {
       label: "Number of Satellites",
@@ -61,20 +61,20 @@ const databar = {
   datasets: [
     {
       label: "Success",
-      backgroundColor: ["rgba(35,106,161,1)","rgba(70,130,180,0.8)","rgba(70,130,180,0.8)","rgba(70,130,180,0.8)","rgba(70,130,180,0.8)"],
+      backgroundColor: ["rgba(35,106,161,1)","rgba(70,130,180,0.6)","rgba(70,130,180,0.6)","rgba(70,130,180,0.6)","rgba(70,130,180,0.6)"],
       borderColor: "rgba(70,130,180,0.8)",
       borderWidth: 1,
-      hoverBackgroundColor: ["rgba(35,106,161,1)","rgba(70,130,180)","rgba(70,130,180)","rgba(70,130,180)","rgba(70,130,180)"],
+      hoverBackgroundColor: ["rgba(35,106,161,1)","rgba(70,130,180,1)","rgba(70,130,180,1)","rgba(70,130,180,1)","rgba(70,130,180,1)"],
       hoverBorderColor: "rgba(70,130,180)",
       data: [100,50,70,55,85]
     },
     {
       label: "Failure",
-      backgroundColor: "rgba(205,92,92,0.75)",
-      borderColor: "rgba(205,92,92,0.75)",
+      backgroundColor: ["rgba(205,92,92,1)","rgba(205,92,92,0.6)","rgba(205,92,92,0.6)","rgba(205,92,92,0.6)","rgba(205,92,92,0.6)"],
+      borderColor: "rgba(205,92,92,1)",
       borderWidth: 1,
-      hoverBackgroundColor: "rgba(205,92,92,0.9)",
-      hoverBorderColor: "rgba(205,92,92,0.9)",
+      hoverBackgroundColor: "rgba(205,92,92,1)",
+      hoverBorderColor: "rgba(205,92,92,1)",
       data: [40,27,40,35,39]
     }
   ]
