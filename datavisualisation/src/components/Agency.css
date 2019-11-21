@@ -1,7 +1,7 @@
 .agency-wrapper{
   font-family: 'Raleway', sans-serif;
   padding-top: 4em;
-  
+
 }
 
 
@@ -75,4 +75,29 @@
 .fancy-underline span {
   background: linear-gradient(to right,#fce3ec,#ffe8cc);
   margin-bottom: 5px;
+}
+
+.links-wrapper {
+  left: 0;
+ top: 45%;
+ position: fixed;
+ padding-left: 2em;
+}
+
+.link-container {
+  font-size: 2em;
+}
+
+#website {
+  color: #51b7a9;
+}
+
+#facebook {
+  color: #4267B2;
+}
+#twitter {
+  color: #1DA1F2;
+}
+#instagram {
+  color: #fb3958;
 }
