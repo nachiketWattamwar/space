@@ -6,6 +6,11 @@ module.exports.nasa = function(req, res) {
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1200px-NASA_logo.svg.png",
     est: "1958",
     country: "USA",
+    insta: "https://www.instagram.com/nasa/?hl=en",
+    fb: "https://www.facebook.com/NASA/",
+    twitter:
+      "https://twitter.com/NASA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+    website: "https://www.nasa.gov/",
     description:
       "The National Aeronautics and Space Administration is an independent agency of the United States Federal Government responsible for the civilian space program, as well as aeronautics and aerospace research.NASA was established in 1958, succeeding the National Advisory Committee for Aeronautics (NACA). The new agency was to have a distinctly civilian orientation, encouraging peaceful applications in space science.Since its establishment, most US space exploration efforts have been led by NASA, including the Apollo Moon landing missions, the Skylab space station, and later the Space Shuttle. NASA is supporting the International Space Station and is overseeing the development of the Orion Multi-Purpose Crew Vehicle, the Space Launch System and Commercial Crew vehicles.",
     projects: [
@@ -113,6 +118,11 @@ module.exports.esa = function(req, res) {
     logo: "https://cdn.mos.cms.futurecdn.net/vKSpQKzkckQur3uhDR4NPK-320-80.jpg",
     est: "1975",
     country: "EUR",
+    insta: "https://www.instagram.com/europeanspaceagency/?hl=en",
+    fb: "https://www.facebook.com/EuropeanSpaceAgency/",
+    twitter:
+      "https://twitter.com/esa?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+    website: "https://www.esa.int/",
     description:
       "The European Space Agency (ESA) is an intergovernmental organisation of 22 member states dedicated to the exploration of space. Established in 1975 and headquartered in Paris, ESA has a worldwide staff of about 2,200 in 2018 and an annual budget of about €5.72 billion (~US$6.43 billion) in 2019.ESA's space flight programme includes human spaceflight (mainly through participation in the International Space Station program); the launch and operation of unmanned exploration missions to other planets and the Moon; Earth observation, science and telecommunication; designing launch vehicles; and maintaining a major spaceport, the Guiana Space Centre at Kourou, French Guiana. ",
     projects: [
@@ -205,6 +215,11 @@ module.exports.isro = function(req, res) {
       "https://upload.wikimedia.org/wikipedia/commons/b/bd/Indian_Space_Research_Organisation_Logo.svg",
     est: "1969",
     country: "IND",
+    insta: "https://www.instagram.com/isro.in/?hl=en",
+    fb: "https://www.facebook.com/ISRO/",
+    twitter:
+      "https://twitter.com/isro?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+    website: "https://www.isro.gov.in/",
     description:
       'The Indian Space Research Organisation is the space agency of the Government of India headquartered in the city of Bengaluru. Its vision is to "harness space technology for national development while pursuing space science research & planetary exploration". The Indian National Committee for Space Research (INCOSPAR) was established in the tenure of Jawaharlal Nehru under the Department of Atomic Energy (DAE) in 1962, with the urging of scientist Vikram Sarabhai recognizing the need in space research. INCOSPAR grew and became ISRO in 1969,also under the DAE in 1972, Government of India setup a Space Commission and the Department of Space (DOS),bringing ISRO under the DOS.',
     projects: [
@@ -297,6 +312,11 @@ module.exports.roscosmos = function(req, res) {
       "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Roscosmos_logo_en.svg/571px-Roscosmos_logo_en.svg.png",
     est: "1956",
     country: "RUSSIA",
+    insta: "https://www.instagram.com/roscosmosofficial/?hl=en",
+    fb: "https://www.facebook.com/Roscosmos/",
+    twitter:
+      "https://twitter.com/roscosmos?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+    website: "http://en.roscosmos.ru/",
     description:
       "The Roscosmos State Corporation for Space Activities, commonly known as Roscosmos, is a state corporation responsible for the wide range and types of space flights and cosmonautics programs for the Russian Federation.Originally part of the Federal Space Agency, the corporation evolved and consolidated itself to the national state corporation on 28 December 2015 through a presidential decree.Before 1992, Roscosmos was a part of the Russian Aviation and Space Agency.The headquarters of Roscosmos are located in Moscow, while the main Mission Control space center site is in the nearby city of Korolyov as well as the Yuri Gagarin Cosmonaut Training Center located in Star City of Moscow Oblast. The launch facilities used are Baikonur Cosmodrome in Kazakhstan (with most launches taking place there, both manned and unmanned), and Vostochny Cosmodrome being built in the Russian Far East in Amur Oblast.",
     projects: [
