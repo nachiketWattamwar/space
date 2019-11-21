@@ -221,7 +221,7 @@ module.exports.isro = function(req, res) {
           "Chandrayaan-1 was India's first lunar probe. It was launched by the Indian Space Research Organisations in October 2008, and operated until August 2009. The mission included a lunar orbiter and an impactor. The mission was a major boost to India's space program, as India researched and developed its own technology in order to explore the Moon. The vehicle was successfully inserted into lunar orbit on 8 November 2008.",
 
         image_url:
-          "https://english.cdn.zeenews.com/sites/default/files/2019/06/07/793963-chandrayaan-nasa.jpg"
+          "https://media.istockphoto.com/photos/satellite-in-space-picture-id498697432?k=6&m=498697432&s=612x612&w=0&h=Ei0RW_9j4iRN8XeqzsS1T1Z5JHI-g3ELYsq05_xBvgw="
       },
 
       {
@@ -266,9 +266,8 @@ module.exports.isro = function(req, res) {
 
         description:
           "ASTROSAT is the first dedicated Indian Astronomy satellite mission launched by ISRO on 28 September 2015, which will be helpful in enabling multi-wavelength observations of the celestial bodies and cosmic sources in X-ray and UV spectral bands simultaneously. The scientific payloads cover the Visible (3500–6000 Å...), UV (1300–op Å...), soft and hard X-ray regimes (0.5–8 keV; 3–80 keV). The uniqueness of ASTROSAT lie in its wide spectral coverage extending over visible, UV, soft and hard X-ray regions.",
-
         image_url:
-          "https://upload.wikimedia.org/wikipedia/commons/1/15/Astrosat-1_in_deployed_configuration.png"
+          "http://www.tech-faq.com/wp-content/uploads/2009/02/where-to-see-free-satellite-images.jpg"
       },
 
       {
@@ -284,7 +283,7 @@ module.exports.isro = function(req, res) {
           "Mars Orbiter Mission 2, also called Mangalyaan 2, is India's second interplanetary mission planned for launch to Mars by the Indian Space Research Organisation (ISRO). As per some reports emerged, the mission was to be an orbiter to Mars proposed for 2024.The orbiter will use aero-braking to lower its initial apoapsis and enter into an orbit more suitable for observations.",
 
         image_url:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/L110_Liquid_Stage_at_Stage_Preparation_Facility.jpg/1280px-L110_Liquid_Stage_at_Stage_Preparation_Facility.jpg"
+          "https://image.winudf.com/v2/image/Y29tLm5hbWljLnVuZXMuZnJlZXNhdGVsbGl0ZWludGVybmV0X3NjcmVlbl8wX29tZjRrMGJq/screen-0.jpg?fakeurl=1&type=.jpg"
       }
     ]
   });
