@@ -36,7 +36,7 @@ export default class Homepage extends Component {
 
               <div class="planet-wrapper col-md-3">
                 <div class="planet-tile">
-                  <a class="planet-link" href="#">
+                  <a class="planet-link" href="http://localhost:3000/planet/mars">
                     <img class="planet-tile-img" src="/img/planet-tiles/mars.jpg"/>
                   </a>
                 </div>
@@ -44,7 +44,7 @@ export default class Homepage extends Component {
 
               <div class="planet-wrapper col-md-3">
                 <div class="planet-tile">
-                  <a class="planet-link" href="#">
+                  <a class="planet-link" href="http://localhost:3000/planet/jupiter">
                     <img class="planet-tile-img" src="/img/planet-tiles/jupiter.jpg"/>
                   </a>
                 </div>
@@ -52,7 +52,7 @@ export default class Homepage extends Component {
 
               <div class="planet-wrapper col-md-3">
                 <div class="planet-tile">
-                  <a class="planet-link" href="#">
+                  <a class="planet-link" href="http://localhost:3000/planet/saturn">
                     <img class="planet-tile-img" src="/img/planet-tiles/saturn.jpg"/>
                   </a>
                 </div>
