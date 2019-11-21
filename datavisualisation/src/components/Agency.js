@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 import axios from "axios";
-import { FaFacebookSquare, FaTwitterSquare, FaInstagram, FaLink } from "react-icons/fa";
+import {
+  FaFacebookSquare,
+  FaTwitterSquare,
+  FaInstagram,
+  FaLink
+} from "react-icons/fa";
 
 import "./Agency.css";
 
@@ -174,29 +179,34 @@ export default class Agency extends Component {
   render() {
     return (
       <div class='container agency-wrapper'>
-
-        <div class="links-wrapper">
-          <div class="row">
-
-            <div class="link-container col-md-12">
-              <a id="website" href="#"><FaLink/></a>
+        <div class='links-wrapper'>
+          <div class='row'>
+            <div class='link-container col-md-12'>
+              <a id='website' href={this.state.agency.website} target='_blank'>
+                <FaLink />
+              </a>
             </div>
 
-            <div class="link-container col-md-12">
-              <a id="facebook" href="#"><FaFacebookSquare/></a>
+            <div class='link-container col-md-12'>
+              <a id='facebook' href={this.state.agency.fb} target='_blank'>
+                <FaFacebookSquare />
+              </a>
             </div>
 
-            <div class="link-container col-md-12">
-              <a id="twitter" href="#"><FaTwitterSquare/></a>
+            <div class='link-container col-md-12'>
+              <a id='twitter' href={this.state.agency.twitter} target='_blank'>
+                <FaTwitterSquare />
+              </a>
             </div>
 
-            <div class="link-container col-md-12">
-              <a id="instagram" href="#"><FaInstagram/></a>
+            <div class='link-container col-md-12'>
+              <a id='instagram' href={this.state.agency.insta} target='_blank'>
+                <FaInstagram />
+              </a>
             </div>
-
           </div>
-        </div> {/*END .links-wrapper*/}
-
+        </div>{" "}
+        {/*END .links-wrapper*/}
         <div></div> {/*END */}
         <div class='agency-main-info'>
           <div class='row'>
