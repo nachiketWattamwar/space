@@ -114,7 +114,7 @@ module.exports.esa = function(req, res) {
     est: "1975",
     country: "EUR",
     description:
-      "The European Space Agency (ESA) is an intergovernmental organisation of 22 member states dedicated to the exploration of space. Established in 1975 and headquartered in Paris, ESA has a worldwide staff of about 2,200 in 2018 and an annual budget of about €5.72 billion (~US$6.43 billion) in 2019.",
+      "The European Space Agency (ESA) is an intergovernmental organisation of 22 member states dedicated to the exploration of space. Established in 1975 and headquartered in Paris, ESA has a worldwide staff of about 2,200 in 2018 and an annual budget of about €5.72 billion (~US$6.43 billion) in 2019.ESA's space flight programme includes human spaceflight (mainly through participation in the International Space Station program); the launch and operation of unmanned exploration missions to other planets and the Moon; Earth observation, science and telecommunication; designing launch vehicles; and maintaining a major spaceport, the Guiana Space Centre at Kourou, French Guiana. ",
     projects: [
       {
         id: "1",
@@ -237,7 +237,7 @@ module.exports.isro = function(req, res) {
           "Chandrayaan-2 was launched from the second launch pad at Satish Dhawan Space Centre on 22 July 2019 at 2.43 PM IST (09:13 UTC) to the Moon by a Geosynchronous Satellite Launch Vehicle Mark III (GSLV Mk III). The planned orbit has a perigee of 169.7 km and an apogee of 45475 km. It consists of a lunar orbiter, lander and rover, all developed in India. The main scientific objective is to map the location and abundance of lunar water.",
 
         image_url:
-          "https://cdn.mos.cms.futurecdn.net/MuxRBAH6GMUUuUqS8nC3XS-1024-80.jpg"
+          "https://www.eco-business.com/media/cache/f8/22/f8223aab1ed0d045d5ada757218c257c.jpg"
       },
 
       {
@@ -253,7 +253,7 @@ module.exports.isro = function(req, res) {
           "Mars Orbiter Mission, also called Mangalyaan, is a spacecraft orbiting Mars since 24 September 2014. It was launched on 5 November 2013 by the Indian Space Research Organisation (ISRO). It is India's first interplanetary mission and ISRO has become the fourth space agency to reach Mars, after the Soviet space program, NASA, and the European Space Agency. India is the first Asian nation to reach Mars orbit, and the first nation in the world to do so in its first attempt.",
 
         image_url:
-          "https://image.slidesharecdn.com/mars-currentevents-141108002735-conversion-gate02/95/mangalyaan-indias-mission-to-mars-1-638.jpg?cb=1415406551"
+          "https://futurism.com/wp-content/uploads/2017/12/nasa-600x315.jpg"
       },
       {
         id: "4",
@@ -313,7 +313,7 @@ module.exports.roscosmos = function(req, res) {
           "Vostok 1 was the first spaceflight of the Vostok programme and the first crewed spaceflight in history. The Vostok 3KA space capsule was launched from Baikonur Cosmodrome on April 12, 1961, with Soviet cosmonaut Yuri Gagarin aboard, making him the first human to cross into outer space.",
 
         image_url:
-          "https://airandspace.si.edu/sites/default/files/styles/slideshow_xlg/public/images/collection-objects/record-images/A19700319000d1.jpg?itok=DU4cZMia"
+          "https://wallpapermemory.com/uploads/807/satellite-background-hd-1680x1050-47129.jpg"
       },
 
       {
@@ -329,7 +329,7 @@ module.exports.roscosmos = function(req, res) {
           "Vostok 2 was a Soviet space mission which carried cosmonaut Gherman Titov into orbit for a full day on August 6, 1961 to study the effects of a more prolonged period of weightlessness on the human body.",
 
         image_url:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Vostok_spacecraft.jpg/390px-Vostok_spacecraft.jpg"
+          "https://farm3.static.flickr.com/2605/4169934109_bddb51ba1a.jpg"
       },
 
       {
@@ -360,7 +360,7 @@ module.exports.roscosmos = function(req, res) {
           "Soyuz TM-2 was the spacecraft used to launch a long duration crew to the Soviet space station Mir, which was unmanned at the time. TM-2 was launched in February 1987, and it was first manned spaceflight of the Soyuz-TM spacecraft, and the second manned spaceflight to Mir (the first being Soyuz T-15). ",
 
         image_url:
-          "https://pbs.twimg.com/media/CoiQ1MAUsAELmjc.jpg?format=jpg&name=small"
+          "https://cdn.images.express.co.uk/img/dynamic/109/590x/Sat-717318.jpg"
       },
 
       {
