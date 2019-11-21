@@ -110,7 +110,12 @@ export default class Homepage extends Component {
 
               <div class="col-md-6 comparison-left">
                 <h2 class="section-title">Comparison</h2>
-                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="description">Space agencies are located all over the world, and some of them have been making significant progress when it comes to outer space and space exploration.
+                 Nowadays, every space agency has their own web portal where they provide information related to their space expeditions and other historical details about themselves. 
+                 For space enthusiasts it is a cumbersome task to go to the webpage of every agency to gather information or to do comparisons. 
+                 Lift-off provides accurate, up-to-date information related to space agencies located across the globe on a single platform. View a
+                 a comparative analysis of the past and recent activities of the space agencies here.
+</p>
 
                 <a class="mybtn" href="http://localhost:3000/comparison">EXPLORE</a>
 

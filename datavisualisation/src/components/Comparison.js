@@ -61,20 +61,20 @@ const databar = {
   datasets: [
     {
       label: "Success",
-      backgroundColor: "rgba(103,156,101)",
-      borderColor: "rgba(103,156,101)",
+      backgroundColor: "rgba(70,130,180,0.8)",
+      borderColor: "rgba(70,130,180,0.8)",
       borderWidth: 1,
-      hoverBackgroundColor: "rgba(103,156,101,0.6)",
-      hoverBorderColor: "rgba(103,156,101,0.6)",
+      hoverBackgroundColor: "rgba(70,130,180)",
+      hoverBorderColor: "rgba(70,130,180)",
       data: [100,50,70,55,85]
     },
     {
       label: "Failure",
-      backgroundColor: "rgba(238,122,39,0.9)",
-      borderColor: "rgba(238,122,39,0.9)",
+      backgroundColor: "rgba(205,92,92,0.75)",
+      borderColor: "rgba(205,92,92,0.75)",
       borderWidth: 1,
-      hoverBackgroundColor: "rgba(238,122,39,0.6)",
-      hoverBorderColor: "rgba(238,122,39,0.6)",
+      hoverBackgroundColor: "rgba(205,92,92,0.9)",
+      hoverBorderColor: "rgba(205,92,92,0.9)",
       data: [40,27,40,35,39]
     }
   ]
@@ -90,19 +90,19 @@ let spacewalkData = {
       lineTension: 0.1,
       backgroundColor: "rgba(99,43,124,0.6)",
       borderColor: "rgba(99,43,124,0.6)",
-      // borderCapStyle: "butt",
-      // borderDash: [],
-      // borderDashOffset: 0.0,
-      // borderJoinStyle: "miter",
-      // pointBorderColor: ["rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,100,11,1)"],
-      // pointBackgroundColor: "#fff",
-      // pointBorderWidth: [1,1,1,1,1,1,1,5],
+      borderCapStyle: "butt",
+      borderDash: [],
+      borderDashOffset: 0.0,
+      borderJoinStyle: "miter",
+      pointBorderColor: ["rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,100,11,1)"],
+      pointBackgroundColor: "#fff",
+      pointBorderWidth: [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5],
       pointHoverRadius: 5,
       pointHoverBackgroundColor: "rgba(99,43,124)",
       pointHoverBorderColor: "rgba(99,43,124)",
-      pointHoverBorderWidth: [2,2,2,2,2,2,2,5],
-      pointRadius: 1,
-      pointHitRadius: 10,
+      pointHoverBorderWidth: [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5],
+      pointRadius: 2,
+      pointHitRadius: 6,
       // data: [3,1,9,13,14,2,5,4,11,20,16,14,12,7,3,5,3,6,3,9,5,3]
       data: [3,4,12,25,39,41,46,50,61,81,97,111,123,130,133,138,141,147,150,157,160,163]
     },
@@ -113,19 +113,19 @@ let spacewalkData = {
       lineTension: 0.1,
       backgroundColor: "rgba(58,115,19,0.6)",
       borderColor: "rgba(58,115,19,0.6)",
-      // borderCapStyle: "butt",
-      // borderDash: [],
-      // borderDashOffset: 0.0,
-      // borderJoinStyle: "miter",
-      // pointBorderColor: ["rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,100,11,1)"],
-      // pointBackgroundColor: "#fff",
-      // pointBorderWidth: [1,1,1,1,1,1,1,5],
+      borderCapStyle: "butt",
+      borderDash: [],
+      borderDashOffset: 0.0,
+      borderJoinStyle: "miter",
+      pointBorderColor: ["rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,100,11,1)"],
+      pointBackgroundColor: "#fff",
+      pointBorderWidth: [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5],
       pointHoverRadius: 5,
       pointHoverBackgroundColor: "rgba(58,115,19,0.8)",
       pointHoverBorderColor: "rgba(58,115,19,0.8)",
-      pointHoverBorderWidth: [2,2,2,2,2,2,2,5],
-      pointRadius: 1,
-      pointHitRadius: 10,
+      pointHoverBorderWidth: [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5],
+      pointRadius: 2,
+      pointHitRadius: 6,
       // data: [0,0,0,5,4,0,5,3,3,3,3,3,3,3,2,6,4,1,1,1,3,0]
       data: [0,0,0,5,9,9,14,17,20,23,26,29,32,35,37,43,47,48,49,50,53,53]
     }
@@ -146,13 +146,13 @@ let budgetCompData = {
       borderJoinStyle: "miter",
       pointBorderColor: ["rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,100,11,1)"],
       pointBackgroundColor: "#fff",
-      pointBorderWidth: [1,1,1,1,1,1,1,5],
+      pointBorderWidth: [1,1,1,5],
       pointHoverRadius: 5,
       pointHoverBackgroundColor: "rgba(13,25,114)",
       pointHoverBorderColor: "rgba(13,25,114)",
-      pointHoverBorderWidth: [2,2,2,2,2,2,2,5],
-      pointRadius: 1,
-      pointHitRadius: 10,
+      pointHoverBorderWidth: [2,2,2,5],
+      pointRadius: 3,
+      pointHitRadius: 6,
       data: []
     },
     {
@@ -167,13 +167,13 @@ let budgetCompData = {
       borderJoinStyle: "miter",
       pointBorderColor: ["rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,100,11,1)"],
       pointBackgroundColor: "#fff",
-      pointBorderWidth: [1,1,1,1,1,1,1,5],
+      pointBorderWidth: [1,1,1,5],
       pointHoverRadius: 5,
       pointHoverBackgroundColor: "rgba(93,146,107)",
       pointHoverBorderColor: "rgba(93,146,107)",
-      pointHoverBorderWidth: [2,2,2,2,2,2,2,5],
-      pointRadius: 1,
-      pointHitRadius: 10,
+      pointHoverBorderWidth: [2,2,2,5],
+      pointRadius: 3,
+      pointHitRadius: 6,
       data: []
     },
     {
@@ -188,13 +188,13 @@ let budgetCompData = {
       borderJoinStyle: "miter",
       pointBorderColor: ["rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,100,11,1)"],
       pointBackgroundColor: "#fff",
-      pointBorderWidth: [1,1,1,1,1,1,1,5],
+      pointBorderWidth: [1,1,1,5],
       pointHoverRadius: 5,
       pointHoverBackgroundColor: "rgba(129,129,129)",
       pointHoverBorderColor: "rgba(129,129,129)",
-      pointHoverBorderWidth: [2,2,2,2,2,2,2,5],
-      pointRadius: 1,
-      pointHitRadius: 10,
+      pointHoverBorderWidth: [2,2,2,5],
+      pointRadius: 3,
+      pointHitRadius: 6,
       data: []
     },
     {
@@ -209,13 +209,13 @@ let budgetCompData = {
       borderJoinStyle: "miter",
       pointBorderColor: ["rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,100,11,1)"],
       pointBackgroundColor: "#fff",
-      pointBorderWidth: [1,1,1,1,1,1,1,5],
+      pointBorderWidth: [1,1,1,5],
       pointHoverRadius: 5,
       pointHoverBackgroundColor: "rgba(144,104,98)",
       pointHoverBorderColor: "rgba(144,104,98)",
-      pointHoverBorderWidth: [2,2,2,2,2,2,2,5],
-      pointRadius: 1,
-      pointHitRadius: 10,
+      pointHoverBorderWidth: [2,2,2,5],
+      pointRadius: 3,
+      pointHitRadius: 6,
       data: [5000,5800,6200,6406]
     },
     {
@@ -228,15 +228,15 @@ let budgetCompData = {
       borderDash: [],
       borderDashOffset: 0.0,
       borderJoinStyle: "miter",
-      pointBorderColor: ["rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,100,11,1)"],
+      pointBorderColor: ["rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(75,192,192,0.4)","rgba(58,115,19,1)"],
       pointBackgroundColor: "#fff",
-      pointBorderWidth: [1,1,1,1,1,1,1,5],
+      pointBorderWidth: [1,1,1,5],
       pointHoverRadius: 5,
-      pointHoverBackgroundColor: "rgb(210,136,136)",
+      pointHoverBackgroundColor: "rgb(58,115,19)",
       pointHoverBorderColor: "rgb(210,136,136)",
-      pointHoverBorderWidth: [2,2,2,2,2,2,2,5],
-      pointRadius: 1,
-      pointHitRadius: 10,
+      pointHoverBorderWidth: [2,2,2,5],
+      pointRadius: 3,
+      pointHitRadius: 6,
       data: [7200,7800,8100,8400]
     }
   ]
@@ -346,7 +346,7 @@ export default class Star extends Component {
               
             }}
           />
-            <div class="dash-text">Total spacewalks from 1998 to 2019 by NASA and ROS</div></div>
+            <div class="dash-text">Total spacewalks from 1998-2019: NASA vs ROS</div></div>
            
             </div></div>
             <div class="col-md-4 tilepad">
@@ -380,7 +380,7 @@ export default class Star extends Component {
                 
               }}
             />
-            <div class="dash-text">Number of successful and failed satellite launches</div>
+            <div class="dash-text">Successful and Failed Launches</div>
           </div>
           
            </div></div>
@@ -416,7 +416,7 @@ export default class Star extends Component {
               
             }}
           />
-           <div class="dash-text">Budgets of Space Agencies for past 4 Years</div></div>
+           <div class="dash-text">Budgets of Space Agencies 2016-2019 </div></div>
            
             </div></div>
             

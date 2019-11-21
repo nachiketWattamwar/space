@@ -1,8 +1,13 @@
 .agency-wrapper{
   font-family: 'Raleway', sans-serif;
+  padding-top: 4em;
+  
 }
+
+
 .logo-div{
-  padding: 5px;
+  padding: 1.5em;
+
 }
 
 .agency-logo {
@@ -31,7 +36,7 @@
 }
 .project-name, .project-name:hover, .project-name:visited, .project-name:active, .project-name:link {
   text-decoration: none;
-  color: #85144b;
+  color: #7461b4;
   font-size: 20px;
   font-weight: bold;
 }
