@@ -26,17 +26,14 @@ var Spacebudgeteurope = mongoose.model("europebudget", Spaceschemabudgeteurope);
 
 //comparison dash
 const IsroBudgetSchema = new mongoose.Schema({
-  
   budget: {
     type: Number
   }
 });
 
-
 var IsroBudget = mongoose.model("isrobudgets", IsroBudgetSchema);
 
 const NasaBudgetSchema = new mongoose.Schema({
- 
   budget: {
     type: Number
   }
@@ -44,9 +41,7 @@ const NasaBudgetSchema = new mongoose.Schema({
 
 var NasaBudget = mongoose.model("nbudget", NasaBudgetSchema);
 
-
 const RosBudgetSchema = new mongoose.Schema({
- 
   budget: {
     type: Number
   }
@@ -59,6 +54,6 @@ module.exports = {
   Spacebudget: Spacebudget,
   Spacebudgeteurope: Spacebudgeteurope,
   NasaBudget: NasaBudget,
-  IsroBudget:IsroBudget,
+  IsroBudget: IsroBudget,
   RosBudget: RosBudget
 };
